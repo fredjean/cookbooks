@@ -19,6 +19,8 @@
 
 case node.platform
 when "ubuntu","debian"
+  package "libpq5"
+  package "libpq-dev"
   package "postgresql-client"
 when "fedora","suse"
   package "postgresql-devel"
